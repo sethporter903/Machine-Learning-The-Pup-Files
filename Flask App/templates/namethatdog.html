@@ -1,0 +1,20 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<title>Who's a Good Dog?</title>   
+
+<br></br>
+<br></br>
+<br></br>
+
+<center>
+    <h1 class="display-4">Prediction</h1>
+    <div id="img">
+        {% if data.filename and data.prediction %}
+            <img src="static/{{ data.filename }}" />
+            <center><h3>{{ data.prediction }}</h3></center>
+        {% endif %}
+    </div>  
+</center>
+
+{% endblock %}

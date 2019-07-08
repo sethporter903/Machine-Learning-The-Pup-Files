@@ -1,0 +1,185 @@
+
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+
+
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+}
+
+h2 {
+    font-size: 20pt;
+}
+
+.intro {
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    display: table;
+    top: 0;
+    background-size: cover;
+    background: url('../images/image.jpg');
+
+}
+.intro.inner {
+    display: table-cell;
+    vertical-align: center;
+    width: 250%;
+    max-width: none;
+}
+
+.content {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align:center;
+}
+.content h1 {
+    font-family:'xfiles';
+    color:white;
+    text-shadow: 0px 0px 300px white;
+    font-size: 500%;
+    white-space: nowrap;
+}
+.button {
+    border: solid rgb(235, 240, 241) 3px;
+    border-radius: 9px;
+    font-family: 'Oswald', san-serif;
+    color:#555E33;
+    background-color:#FEEFC8;
+    font-size: 135%;
+    padding: 10px  20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    /* z-index: -1;
+    position:relative; */
+}
+
+
+.button:hover {
+  background-color: #555;
+}
+
+p {
+    font-size: 95%;
+    line-height: 160%;
+    text-align: justify;
+    margin: 3%;
+    font-family: sans-serif;
+}
+
+@media screen and (max-width:768px) {
+    .content h1 {
+        font-size: 250%;
+    }
+    .button {
+        font-size: 110%;
+        padding: 7px 15px;
+    }
+    p {
+        font-size: 100%;
+        line-height: 160%;
+    }
+}
+
+.navbar-brand {
+  padding: 0;
+  margin: 0;
+}
+
+.logo {
+  height: 50px;
+  padding-right: 14px;
+  padding-left: 5px;
+}
+
+.column {
+    float: left;
+    width: 33.3%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+  }
+
+  @media screen and (max-width: 650px) {
+    .column {
+      width: 100%;
+      display: block;
+    }
+  }
+
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+
+  .container {
+    padding: 0 16px;
+  }
+
+  .container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  .title {
+    color:white;
+  }
+
+
+  .legend {
+    color: #555;
+    padding: 6px 8px;
+    font: 12px Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    background: white;
+    background: rgba(255,255,255,0.8);
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    border-radius: 5px;
+  }
+
+  .legend ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    clear: both;
+  }
+
+  .legend li {
+    display: inline-block;
+    width: 30px;
+    height: 22px;
+  }
+
+  .legend .min {
+    float: left;
+    padding-bottom: 5px;
+  }
+
+  .legend .max {
+    float: right;
+  }
+
+
+  @font-face {
+    font-family: 'xfiles';
+    src:  url('fonts/xfiles.ttf') format('woff2');
+
+  }
+
+  .image-icon img {
+    height: 52px !important;
+    width: 52px !important;
+    border-radius: 50%;
+    border: solid;
+    border-color: #404040;
+}

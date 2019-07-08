@@ -1,0 +1,26 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+<title>Name That Dog!</title>   
+
+<br></br>
+<br></br>
+<br></br>
+
+<center>
+    <h1 class="display-3">Name That Dog!</h1>
+    <div class="col-md-6">
+        <img src="https://cdn.psychologytoday.com/sites/default/files/styles/image-article_inline_full/public/field_blog_entry_teaser_image/question_mark_0.png?itok=hYPCtvRX" style="width: 252px; height: 336px;" />
+    </div>
+    <div class="col-md-6">
+        <div class="form-group">
+            <form method=post enctype=multipart/form-data>
+                <p><input type=file name=file>
+                    <input type=submit class="btn btn-primary" value=Upload>
+            </form>
+        </div>
+    </div>
+</center>
+
+
+{% endblock %}

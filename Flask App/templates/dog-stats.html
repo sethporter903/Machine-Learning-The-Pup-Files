@@ -1,0 +1,13 @@
+{% extends 'layout.html' %}
+
+{% block body %}
+    <title>Doggy Stats</title>    
+    <!-- The div where we will inject our pie chart -->
+    <center>
+        <br><br><br>
+        <h3 class="display-3">Dog Breed Statistics per Country</h3>
+        <div id="pie"></div>
+    </center>
+    <!-- Our JS -->
+    <script src="{{ url_for('static', filename='js/dog-stats.js') }}"></script>
+{% endblock %}

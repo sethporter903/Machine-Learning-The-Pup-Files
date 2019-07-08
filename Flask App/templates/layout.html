@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta name="description" content="">
+      <!--Favicon-->
+      <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+      <!-- jQuery JS -->
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <!-- Bootstrap CSS & JS -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+      <link rel="canonical" href="https://getbootstrap.com/docs/4.3/examples/navbar-fixed/">
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+      <!-- Leaflet CSS & JS -->
+      <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" />
+      <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"></script>
+      <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css"
+      integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+      crossorigin=""/>
+      <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js"
+      integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og=="
+      crossorigin=""></script>
+      <!-- Our CSS -->
+      <link rel="stylesheet" type="text/css" href="../static/css/style.css">
+      <!-- D3.js -->
+      <script src="https://d3js.org/d3.v4.min.js"></script>
+      <!-- Plotly.js -->
+      <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>      
+    </head>
+    <body>
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+         <a class="navbar-brand" href="/">
+            <img src="{{ url_for('static', filename='favicon.ico') }}" class="img-responsive logo">The Pup Files</a>
+
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+         </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/about">Meet the Pack</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/namethatdog">Name That Dog!</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/map">Doggos on a Map</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/stats">Doggy Stats</a>
+                </li>
+            </ul>
+        </div>
+         </nav>
+        <div class="container">
+            {% block body %}{% endblock %}
+        </div>
+   </body>
+</html>
